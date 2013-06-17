@@ -1,17 +1,11 @@
 <?php
 
-/**
- * cb.php
- * 		只处理\?\?.+的情况
- * 		部署在项目根目录中
- *	author:	拔赤 - lijine00333@163.com
- */
 require "./cb/lessc.inc.php";
 $less = new lessc;
 
 //CDN 设置
 //$CDN = 'http://g.tbcdn.cn/'; 
-$CDN = 'http://assets.taobaocdn.com/'; //如果是在服务器上配置的话，则打开这一句的注释
+$CDN = 'http://assets.taobaocdn.com/g/'; //如果是在服务器上配置的话，则打开这一句的注释
  
 //读到-min文件时会转读源文件，这些文件除外
 $exp = '/(editor-min|editor-core-pkg-min|calendar-pkg-min|editor-pkg-min|editor-plugin-pkg-min|kissy-min|simplecalendar-min|sizzle-pkg-min|base-pkg-min|jstorage-pkg-min)/';
