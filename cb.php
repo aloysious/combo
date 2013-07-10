@@ -93,7 +93,7 @@ if(preg_match('/\?\?/', $_SERVER['REQUEST_URI'])) {
 	
 	//如果不是combo形式的单文件
 } else {
-	$files[] = $_SERVER['REQUEST_URI'];
+	$files[] = $_SERVER['SCRIPT_NAME'];
 }
 	 
 // 得到需要读取的文件列表
